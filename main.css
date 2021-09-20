@@ -178,5 +178,20 @@ span {
 /*section4 closes*/
 
 /*section5*/
-
+.webimg{
+    text-align: center;
+}
+.webimg img{
+    width: -webkit-fill-available; 
+    margin-top: 19px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.webimg lottie-player{
+    position: absolute;
+    width: 53%;
+    margin-top: 11.35%;
+    margin-left: 42%;
+    height: auto;
+}
 /*section5 closes*/
