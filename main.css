@@ -196,5 +196,22 @@ span {
 }
 /*section5 closes*/
 /*section6*/
-
+.phone{
+    position:relative;
+    z-index: -19;
+    width: 54%;
+    transform: rotate(24deg);
+    margin-top: 45px;
+    margin-left: 19%;
+    margin-bottom: 30px;
+    margin-right: auto;
+}
+.box{
+    margin-right: 10%;
+    margin-left: 58%;
+    margin-top: -162px;
+    z-index: -1;
+    text-shadow: 2px -1px 0px black;
+    position: absolute;
+}
 /*section6 closes*/
