@@ -23,6 +23,7 @@ const SignIn = () => {
       var token = credential.accessToken;
       var user = result.user;
       console.log(user);
+      window.location.href = "Aboutme.html";
     })
     .catch((error) => {
       console.log(error);
