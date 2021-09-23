@@ -215,3 +215,13 @@ span {
     position: absolute;
 }
 /*section6 closes*/
+/*section7*/
+.finalfooter{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*section7 closes*/
