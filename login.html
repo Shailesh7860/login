@@ -33,7 +33,7 @@
             </center><br /><br />
             <a href="#" onclick="forgotPass()">Forgot Password</a>
             <center><button type="submit" class="btn btn-primary">Login</button>
-                
+
             </center>
         </form>
         <center><button onclick="SignIn()" class="btn btn-secondary">Sign In with Google Account</button></center>
@@ -44,6 +44,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
     <script src="index.js"></script>
+    <script type=module>
+        import { getAuth, onAuthStateChanged } from "firebase/auth";
+
+const auth = getAuth(firebaseApp);
+onAuthStateChanged(auth, user => {
+  console.log(user);
+});
+    </script>
 </body>
 
 </html>
