@@ -28,3 +28,10 @@ const SignIn = () => {
       console.log(error);
     });
 };
+
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+
+const auth = getAuth(firebaseApp);
+onAuthStateChanged(auth, user => {
+  console.log(user);
+});
