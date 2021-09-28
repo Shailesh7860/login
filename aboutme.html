@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +23,12 @@
 </head>
 
 <body>
+
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+
+
     <!--Section 1-->
     <section id="Firstpg">
         <div class="name">Shailesh <br>Suvarna</div>
@@ -151,11 +158,8 @@
         <hr class="half2" style="margin-bottom: 10%;">
         <p class="info3" style="color: #FFFFFF42; margin-left: 0px;">For other materials and files like javascripts,
             bootstrap and more... Contact Me</p>
-
-        <section>
-            <div class="email">EMAIL</div><a class="emailid"
-                href="mailto:shaileshsuvarna24@gmail.com"><span>Shaileshsuvarna24</span>@gmail.com</a>
-        </section>
+        <div class="email">EMAIL</div><a class="emailid"
+            href="mailto:shaileshsuvarna24@gmail.com"><span>Shaileshsuvarna24</span>@gmail.com</a>
         <hr class="break">
         <div class="finalfooter"><a class="direction" href="www.twitter.com/shailesh_7860">Shailesh Suvarna &copy; 2021
             </a>
@@ -163,6 +167,13 @@
         </div>
     </section>
     <!--Section 7 closes-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 3000);
+    </script>
 </body>
 
 </html>
