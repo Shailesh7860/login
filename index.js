@@ -23,8 +23,8 @@ const SignIn = () => {
       var token = credential.accessToken;
       var user = result.user;
       console.log(user);
-      window.location.assign('Aboutme.html');
-      //window.location.href = "https://shaileshsuvarna.github.io/Aboutme/Aboutme.html";
+      window.location.assign('aboutme.html');
+      //window.location.href = "https://shaileshsuvarna.github.io/Aboutme/aboutme.html";
     })
     .catch((error) => {
       console.log(error);
