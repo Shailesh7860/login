@@ -3,4 +3,4 @@ Welcome To A Website About The Owner Of Sharps ( Mr. Shailesh N Suvarna ).
 He is a Freelancer.
 He creates websites, edits videos&photgraphs.
 Don't be nervous to contact.
-This website is made for personal use only.
+This website is made for personal use only.:white_check_mark:
