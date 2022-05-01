@@ -11,8 +11,7 @@
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var provider = new firebase.auth.GoogleAuthProvider();
-
+var provider = new firebase.auth.GoogleAuthProvider();  
 const SignIn = () => {
   firebase
     .auth()
