@@ -24,7 +24,7 @@ const SignIn = () => {
       var user = result.user;
       console.log(user);
       window.location.assign('aboutme.html');
-      //window.location.href = "https://shaileshsuvarna.github.io/website/aboutme.html";
+      //window.location.href = "/aboutme.html";
     })
     .catch((error) => {
       console.log(error);
