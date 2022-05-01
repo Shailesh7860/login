@@ -32,16 +32,16 @@ const SignIn = () => {
 };
 
 function login(event){
-  //event.preventDefault()
+  //event.preventDefault();
+  var email = document.getElementsById('email');
+  var email = document.getElementsById('password');
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
-    var email = document.getElementsById('email')
-    var email = document.getElementsById('password')
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log('Error Signin,', error.message)
   }).then(funtion(user){
     if(user) {
-    window.location.assign('aboutme.html')
+    window.location.assign('aboutme.html');
     }
   })
 }
