@@ -39,5 +39,9 @@ function login(event){
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log('Error Signin,', error.message)
-  });
+  }).then(funtion(user){
+    if(user) {
+    window.location.assign('aboutme.html')
+    }
+  })
 }
