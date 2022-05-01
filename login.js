@@ -32,7 +32,7 @@ const SignIn = () => {
 };
 
 function login(event){
-  event.preventDefault()
+  //event.preventDefault()
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
     var email = document.getElementsById('email')
     var email = document.getElementsById('password')
