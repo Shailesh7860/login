@@ -34,6 +34,8 @@ const SignIn = () => {
 function login(event){
   event.preventDefault()
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
+    var email = document.getElementsById('email')
+    var email = document.getElementsById('password')
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log('Error Signin,', error.message)
