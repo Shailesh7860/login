@@ -31,3 +31,11 @@ const SignIn = () => {
     });
 };
 
+function login(event){
+  event.preventDefault()
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log('Error Signin,', error.message)
+  });
+}
