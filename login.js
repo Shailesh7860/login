@@ -30,29 +30,11 @@ const SignIn = () => {
     });
 };
 
-var email = document.getElementById('email').value;
-var password = document.getElementById('password').value;
+function LoginUser(){
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
 
-
-firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in 
-    var user = userCredential.user;
-    // ...
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(e=>{
+    console.log(e)
   })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ..
-  });
-
-  firebase.auth().signInWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-  });
+}
