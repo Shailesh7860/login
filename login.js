@@ -30,19 +30,3 @@ const SignIn = () => {
     });
 };
 
-function login(event){
-  //event.preventDefault();
-  var email = document.getElementsById('email');
-  var email = document.getElementsById('password');
-  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log('Error Signin,', error.message)
-  }).then(funtion(user){
-    if(user) {
-    window.location.assign('aboutme.html');
-    }
-  });
-
-
-}
