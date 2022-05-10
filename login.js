@@ -42,5 +42,7 @@ function login(event){
     if(user) {
     window.location.assign('aboutme.html');
     }
-  })
+  });
+
+
 }
