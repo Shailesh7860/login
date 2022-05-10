@@ -36,6 +36,7 @@ function LoginUser(){
 
   firebase.auth().signInWithEmailAndPassword(email, password).catch(e=>{
     console.log(e)
+    window.location.assign('aboutme.html');
   })
 }
 
