@@ -30,6 +30,10 @@ const SignIn = () => {
     });
 };
 
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+
+
 firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
     // Signed in 
