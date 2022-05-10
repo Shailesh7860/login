@@ -38,3 +38,10 @@ function LoginUser(){
     console.log(e)
   })
 }
+
+firebase.auth().onAuthStateChanged(user=>{
+  if(user){
+    console.log(user)
+    window.location.assign('aboutme.html');
+  }
+})
