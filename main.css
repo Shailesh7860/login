@@ -41,10 +41,10 @@ html{
 
 .line {
     position: absolute;
-    width: 58px;
+    width: 50px;
     height: 0px;
-    margin-left: -27px;
-    top: 500px;
+    margin-left: -18px;
+    top: 510px;
     border: 2px solid #FFEA00;
     transform: rotate(90deg);
 }
