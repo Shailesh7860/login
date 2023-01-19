@@ -8,15 +8,15 @@
 }
 
 body{
-		background-image:url("bg.jpg");
+		background-image:url("https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg");
 		background-size:cover;
 		background-repeat:no-repeat;
 }
 
 .signin{
-		position:absolute;
+		position:sticky;
 		top:10%;
-		left:43.5%;
+		left:50%;
 		color:#3a3c4b;
 		font-weight:10px;
 		font-size:40px;
@@ -175,7 +175,7 @@ center{
 .container4{
 		position:relative;
 		top:106.2px;
-		right:-63px;
+		right:0px;
 		width:95px;
 		height:23px;
 		background:white;
